@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: courseResistration
+
+server:
+  port : 9090
+
