@@ -13,6 +13,12 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 interface CourseService {
+    /**"course" Aggregation
+     * : Lecture, courseApplicaiton 관련 command도 CourseService를 통해 처리 (For 단순화 )
+     * ( 선택의 문제! )
+     *
+     *=> 각각의 service 따로 구현하고 courseService에 주입해도 됨.
+     */
 
     //courseService
     fun getAllCourseList() : List<CourseResponse>
