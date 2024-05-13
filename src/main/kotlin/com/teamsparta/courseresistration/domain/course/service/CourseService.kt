@@ -48,8 +48,8 @@ interface CourseService {
 
     //CourseApplicationService
     fun applyCourse( courseId: Long, applyCourseRequest: ApplyCourseRequest) : CourseApplicationResponse
-    fun getApplicationList( courseId: Long) : List<CourseApplicationResponse>
-    fun getApplication (courseId: Long, applicationId : Long) : CourseApplicationResponse
+    fun getCourseApplicationList( courseId: Long) : List<CourseApplicationResponse>
+    fun getCourseApplication (courseId: Long, applicationId : Long) : CourseApplicationResponse
     fun updateApplicationStatus (courseId: Long, applicationId : Long,updateApplicationStatusRequest: UpdateApplicationStatusRequest ) : CourseApplicationResponse
 
 }
